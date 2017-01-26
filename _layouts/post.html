@@ -1,0 +1,25 @@
+---
+layout: default
+---
+<article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+  <header class="post-header">
+    {%if page.cover%}
+    <div class="post-cover-container">
+      <a href='{{page.link}}'><img src="{{site.url}}/assets{{page.cover}}" alt="" id='js-post-cover' class="post-cover"></a>
+   </div>
+   {%endif%}
+   <div class="post-header-info">
+     <a href='{{page.link}}'><h1 class="post-title" itemprop="name headline">{{ page.title }}</h1></a>
+     <ul class="post-meta">
+       <li class="post-author">{{page.author}}</li>
+       <li class='post-published'>{{page.publisher}} ({{ page.publicationDate }})</li>
+       <li class='post-pages'>{{page.pages}} Pages</li>
+    </ul>
+    </div>
+  </header>
+
+  <div class="post-content" itemprop="articleBody">
+    {{ content }}
+  </div>
+
+</article>

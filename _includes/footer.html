@@ -1,0 +1,70 @@
+<script>
+  /*(function(d) {
+    var config = {
+      kitId: 'nxh8pvv',
+      scriptTimeout: 3000,
+      async: true
+    },
+    h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+  })(document);*/
+</script>
+
+<script>
+var img = document.getElementById('js-post-cover');
+var siteHeader = document.querySelector('#js-siteHeader');
+var header = document.querySelector('.post-header');
+var title = document.querySelector('.post-title');
+var info = document.querySelector('.post-header-info');
+var swatches;
+var rgbToString = function(arr){
+    var s = 'rgb(' + arr[0] + ',' + arr[1] + ',' + arr[2] + ')'
+    return s;
+}
+var lighten = function(arr, v){
+    var newArr = [];
+    for (var i = 0; i < arr.length; i++){
+        newArr.push(arr[i] + v);
+    }
+    return newArr;
+}
+function rgbSum(arr) {
+    return (arr[0] + arr[1] + arr[2]) * 1;
+}
+
+function httpGetAsync(theUrl, callback)
+{
+    var xmlHttp = new XMLHttpRequest();
+    xmlHttp.onreadystatechange = function() { 
+        if (xmlHttp.readyState == 4 && xmlHttp.status == 200)
+            callback(xmlHttp.responseText);
+    }
+    xmlHttp.open("GET", theUrl, true); // true for asynchronous 
+    xmlHttp.send(null);
+}
+
+img.addEventListener('load', function() {
+    var colorThief = new ColorThief();
+    swatches = colorThief.getPalette(img, 4);
+    swatches = colorThief.markBoomColors(swatches);
+
+    console.log(swatches)
+    //siteHeader.style.backgroundColor = rgbToString(lighten(swatches[0], 12));    
+    //siteHeader.style.borderBottomColor = rgbToString(lighten(swatches[0], 30));    
+    for (var i = 0; i < swatches.length; i++){
+        if(swatches[i].boomColor){
+            header.style.backgroundColor = rgbToString(lighten(swatches[i], 2));    
+        }
+    }
+    var sum = rgbSum(swatches[0]);
+    console.log(sum);
+    if (sum < 400){
+        title.style.color = "rgba(0,0,0, .95)";
+        info.style.color = "rgba(255,255,255, 1)";
+    } else {
+        title.style.color = "rgba(255,255,255, 1)";
+        info.style.color = "rgba(0,0,0,.95)";
+    }
+
+});
+        
+</script>
