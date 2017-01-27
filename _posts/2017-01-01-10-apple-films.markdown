@@ -1,0 +1,18 @@
+---
+layout: post
+title: "Yes, more Apple films and yes, they’re good!"
+date: 2016-08-16 16:40:39 +0100
+categories: article
+author: Joe Donaldson
+publisher: Motiongrapher
+publicationDate: 2016
+link: http://motionographer.com/2016/11/14/yes-more-apple-films-and-yes-theyre-good/
+---
+
+Great interview with Johnny Kelly about his work with Apple. I love how seamlessly these shorts combine 2d animation with live action footage - good stuff. Also the pastel colour schemes are amazing. I like this quote from Kelly about bringing manual work and human error into the process rather than doing everything digitally:
+
+> And although we tried to do it as smoothly and cleanly as possible, inevitably you get unexpected results – camera bumps, lighting kicks, a director touching something he shouldn’t – all give you the sort of things you’d never dream of adding in CG. For me these imperfections make it a little more engaging to watch and prevent it feeling overly clinical.  
+
+Also love how they turned a really simple concept into something amazing through good craftsmanship: 
+
+> I thought the simplest approach (maybe not in hindsight) would be to literally interpret this. So we look at things like sitting, eating, running etc. from different angles, and show how one connects to the next. It’s an easy idea to write down, but having wall-to-wall transition reveals felt like it could get disorientating, or just tiring. So to answer your question the rule of sorts, in order to keep things clear, was that our camera/viewpoint would move just one rotation at a time.

@@ -1,5 +1,5 @@
 .post-header {
-    padding: 4%;
+    padding: 4rem;
     display: flex;
     padding-bottom: 0;
     font-size: 1.8rem;
@@ -25,7 +25,14 @@
 
 .post-title {
     max-width: 40rem;
-    margin-bottom: 1rem;
+    color: $black;
+    display: block;
+    margin-bottom: 2rem;
+}
+
+blockquote {
+    color: gray;
+    padding-left: 1rem;
 }
 
 .post-author {
@@ -40,7 +47,7 @@
 }
 
 .post-content {
-    padding: 2rem 4%;
+    padding: 2rem 4rem;
     font-size: 1.4rem;
     max-width: 50rem;
     line-height: 1.45;

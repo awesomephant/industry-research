@@ -1,8 +1,8 @@
 ---
 layout: default
 ---
-
-<h2>Books</h2>
+<main class="site-content">
+<h2 class='section-title'>Books</h2>
   <ul class="post-list">
     {% for post in site.posts %}
       {% if post.categories contains 'book' %}
@@ -14,7 +14,7 @@ layout: default
       {% endif %}
     {% endfor %}
 </ul>
-<h2>Articles</h2>
+<h2 class='section-title'>Articles</h2>
 <ul class="post-list articles">
       {% for post in site.posts %}
 
@@ -22,28 +22,11 @@ layout: default
       <li class='post-list-item post-list-article'>
         <a href="{{ post.url | prepend: site.url }}">
           <h2 class='post-list-article-title'>{{post.title}}</h2> 
-          <span class='post-list-article-author'>{{post.author}}</span> 
+          <span class='post-list-article-author'>{{post.author}} — </span> 
           <span class='post-list-article-publisher'>{{post.publisher}}</span> 
         </a>
       </li>
       {% endif %}
-    {% endfor %}
-      
+    {% endfor %} 
 </ul>
-
-<h2>Shows</h2>
-
-<ul class='post-list shows'>
-      {% for post in site.posts %}
-
-   {% if post.categories contains 'exhibition' %}
-      <li class='post-list-item post-list-exhibition'>
-        <a href="{{ post.url | prepend: site.url }}">
-          <h2 class='post-list-article-title'>{{post.title}}</h2> 
-          <span class='post-list-article-publisher'>{{post.publisher}}</span> 
-        </a>
-      </li>
-{%endif%}
-    {% endfor %}
-
-</ul>
+</main>

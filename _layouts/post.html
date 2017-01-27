@@ -9,11 +9,11 @@ layout: default
    </div>
    {%endif%}
    <div class="post-header-info">
-     <a href='{{page.link}}'><h1 class="post-title" itemprop="name headline">{{ page.title }}</h1></a>
+     <a class="post-title" href='{{page.link}}'><h1 itemprop="name headline">{{ page.title }}</h1></a>
      <ul class="post-meta">
        <li class="post-author">{{page.author}}</li>
        <li class='post-published'>{{page.publisher}} ({{ page.publicationDate }})</li>
-       <li class='post-pages'>{{page.pages}} Pages</li>
+       {%if page.pages%}<li class='post-pages'>{{page.pages}} Pages</li>{%endif%}
     </ul>
     </div>
   </header>

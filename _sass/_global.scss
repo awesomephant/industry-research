@@ -11,15 +11,17 @@ $tisa: Akkurat, Helvetica, georgia, serif;
 }
 
 body {
-    padding-left: 4rem;
     font-family: $din;
+}
+
+.site-content {
+    padding: 0 4rem;
 }
 
 .site-header {
     display: flex;
-    padding: 2rem 0;
-    font-size: 2rem;
-    font-weight: 900;
+    padding: 2rem 4rem;
+    font-size: 1.4rem;
     a {
         color: $black;
     }
@@ -40,6 +42,13 @@ body {
 }
 
 
+.section-title {
+    font-size: 1.8rem;
+    border-bottom: 1px solid lightgray;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+}
+
 .post-list {
     padding-bottom: 2rem;
     list-style: none;
@@ -49,11 +58,25 @@ body {
 }
 
 .articles {
-    flex-flow: column;
+    display: block;
+    column-count: 2;
+    .post-list-item {
+        display: inline-block;
+        width: 90%;
+        margin-bottom: 1rem;
+    }
+    .post-list-article-title {
+        display: block;
+    }
+
+    span {
+        color: gray;
+        font-size: 1rem;
+    }
 }
 
 .post-list-item {
-    transition: 300ms;
+    transition: 100ms;
     margin-right: .5rem;
     margin-bottom: .5rem;
     img {
@@ -62,9 +85,6 @@ body {
     &:hover, &:focus {
         opacity: .8;
     }
-}
-
-.post-list-exhibition {
 }
 
 .post-list-article {

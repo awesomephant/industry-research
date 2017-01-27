@@ -1,0 +1,12 @@
+---
+layout: post
+title: "Building a Cross Platform 360-degree Video Experience at The New York Times"
+date: 2016-08-16 16:40:39 +0100
+categories: article
+author: Thiago Pontes and Maxwell da Silva
+publisher:  The New York Times
+publicationDate: 2016
+link: https://open.blogs.nytimes.com/2016/11/11/building-a-cross-platform-360-degree-video-experience-at-the-new-york-times/?_r=0
+---
+
+

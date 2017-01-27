@@ -12,4 +12,6 @@ link: https://libsearch.arts.ac.uk/cgi-bin/koha/opac-detail.pl?biblionumber=6012
 cover: "/books/victory-lab.jpg"
 ---
 
-Some good insights into how political science and data is used to run political campaigns in the US.m
+Some good insights into how political science and data is used to run political campaigns in the US. Graphic design is a part of this: In one section Eisenberg describes an experiment where letters asking people to go out and vote on election day were sent to different groups of people. Each group got a letter with identical content but different graphic treatment - the one that looked as if it was typed up in Microsoft Word and came in a plain white envelope performed the best, far ahead of the glossy, colour-printed "designer's" version.
+
+However the more interesting part to me is the way data science is used to build models that can predict how each individual person is likely going to vote - and what issues might be used to change their behaviour. Applied science is awesome.
