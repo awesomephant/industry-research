@@ -11,3 +11,7 @@ pages: 131
 link: https://libsearch.arts.ac.uk/cgi-bin/koha/opac-detail.pl?biblionumber=239520
 cover: "/books/nyc-subway.jpg"
 ---
+
+I love transort design - I think it's again because it's a huge system with countless moving parts that all have to work together. Not just graphic design, but also architecture, writing, illustration and so on.
+
+Also it turns out the New York Subway design system didn't just happen - there used to be two competing companies each issuing maps and material that didn't cover the other company's lines. Vignelli developed some sort of consistent set of rules, but they're still struggling with it today.

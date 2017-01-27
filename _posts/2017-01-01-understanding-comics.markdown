@@ -12,3 +12,4 @@ link: https://libsearch.arts.ac.uk/cgi-bin/koha/opac-detail.pl?biblionumber=9208
 cover: "/books/understanding-comics.jpg"
 ---
 
+Re-reading this at least once a term.
